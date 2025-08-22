@@ -39,7 +39,7 @@ body {
   transition: 0.3s;
   z-index: 2;
 }
-.navigation li a:before {
+.navigation li a::before {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -47,12 +47,13 @@ body {
   transform: translateX(-50%);
   width: 0;
   height: 3px;
+  background-color: #7fffd4;
   transition: 0.3s;
 }
 .navigation li .active a {
   color: #1a1a1a;
 }
-.navigation li .active a:before {
+.navigation li .active a::before {
   width: 0;
 }
 .navigation li:hover a::before {
